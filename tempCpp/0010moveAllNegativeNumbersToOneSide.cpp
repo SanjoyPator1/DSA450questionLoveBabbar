@@ -27,17 +27,6 @@ void sortNegative(int arr[], int n)
 
 }
 
-void printArray(int arr[], int n)
-{
-	cout << endl;
-	cout << "after sorting all the negative numbers on one side the array is : - " << endl;
-	for (int i = 0; i < n; i++)
-	{
-
-		cout << arr[i] << " ";
-	}
-}
-
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -54,7 +43,7 @@ int main()
 
 	int arr[n];
 
-	cout << "please enter the nos in array " << endl;
+	cout << "please enter the nos in array - only 0's , 1's & 2's" << endl;
 	for (int i = 0; i < n; i++)
 	{
 
@@ -63,7 +52,13 @@ int main()
 
 	sortNegative(arr, n);
 
-	printArray(arr, n);
+	cout << endl;
+	cout << "after sorting all the negative numbers on one side the array is : - " << endl;
+	for (int i = 0; i < n; i++)
+	{
+
+		cout << arr[i] << " ";
+	}
 
 
 }
